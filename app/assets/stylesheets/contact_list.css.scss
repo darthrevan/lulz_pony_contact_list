@@ -1,0 +1,79 @@
+// Place all the styles related to the contact_list controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+@import "bootstrap";
+
+body {
+  #background-image: url(http://images.wikia.com/callofduty4s/images/6/6f/MLP_background_4.jpg);
+  background-image: url(http://feminspire.com/wp-content/uploads/2013/05/My-Little-Pony-Friendship-is-Magic-my-little-pony-friendship-is-magic-32310685-1600-1000.jpg);
+  background-position: center top;
+  background-repeat: no-repeat;
+  font-family: 'News Cycle', 'Arial Narrow Bold', sans-serif;
+}
+.pony-container {
+  border: 1px solid #ccc;
+  border-bottom: 0;
+  padding: 20px;
+  margin-top: 38px;
+  width: 720px;
+  #background: url(http://feminspire.com/wp-content/uploads/2013/05/My-Little-Pony-Friendship-is-Magic-my-little-pony-friendship-is-magic-32310685-1600-1000.jpg);
+}
+.pony-title {
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid #e74944;
+  background-color: salmon;
+  padding: 15px;
+  color: #fff;
+  width: 430px;
+}
+
+.navbar a {
+  text-decoration: none;
+}
+
+.pony-list  {
+  border: 1px solid #e74944;
+  padding-top: 10px;
+  padding-left: 15px;
+  margin: 20px;
+  background-color: salmon;
+  color: #fff;
+  float: left;
+}
+
+.pony-list label {
+  font-weight: bold;
+}
+
+.pony-ul  {
+  padding-left: 5px;
+  padding-top: 10px;
+  max-height: 345px;
+  overflow: auto;
+}
+
+.pony-ul li a {
+  color: mistyrose;
+  font-size: 15px;
+}
+
+.pony-form  {
+  border: 1px solid #e74944;
+  padding-left: 15px;
+  margin: 20px;
+  background-color: salmon;
+  color: #fff;
+  height: 470px;
+  padding-top: 10px;
+}
+.pony-form label  {
+  font-weight: bold;
+}
+.pony-wrappa  {
+  display: block;
+}
+.pony-filter {
+  padding-bottom: 1px;
+}

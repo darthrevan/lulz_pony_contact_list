@@ -1,0 +1,27 @@
+<form role="form" data-ng-submit="newContact()">
+    <div class="form-group">
+        <label for="contact.name">Name </label>
+        <input id="contact.name" type="text" ng-model="new_contact.name" placeholder="Name">
+    </div>
+    <div class="form-group">
+        <label for="contact.description">Description </label>
+        <input type="text" id="contact.description" ng-model="new_contact.description" placeholder="Description">
+    </div>
+    <div class="form-group">
+        <label for="contact.phone">Phone </label>
+        <input type="text" id="contact.phone" ng-model="new_contact.phone"  placeholder="Phone">
+    </div>
+    <div class="form-group">
+        <label for="contact.city">City </label>
+        <input type="text" ng-model="new_contact.city" id="contact.city"  placeholder="Cityg">
+    </div>
+    <div class="form-group">
+        <label for="contact.group_id">Group </label>
+        <select id="contact.group_id" ng-model="new_contact.group_id" ng-options="group.id as group.name for group in contact_groups"></select><br>
+    </div>
+    <div class="form-group">
+        <input type="submit" value="Save" class="btn">
+    </div>
+
+</form>
+<a class="btn" href="/">Close</a>

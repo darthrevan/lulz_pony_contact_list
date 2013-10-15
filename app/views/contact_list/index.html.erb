@@ -1,0 +1,29 @@
+<div class="navbar"><a href="/"><h1 class="pony-title">Сontact List is MAGIC!</h1></a></div>
+
+<span class="pony-wrappa">
+<div ng-controller="ContactListCtrl">
+  <div class="span4 pony-list">
+    <label for="pony-filter">Quick search</label><input id="pony-filter" type="text" ng-model="filter.name" />
+    <br>
+    <span class="new-pony"><a class="btn" href="#/new">New contact</a></span>
+
+    <ul class="pony-ul unstyled" id="contact_list">
+      <li data-ng-repeat="contact in contacts | filter:filter.group | filter:filter.name">
+        <a href="#/contacts/{{contact.id}}">{{contact.name}}</a>
+
+        <form ng-submit="deleteContact({{contact.id}})" style="display:inline">
+          <button type="submit" class="btn-link">
+            <i class="icon-trash"></i>
+          </button>
+        </form>
+      </li>
+    </ul>
+  </div>
+
+
+  <div class="container span4 pony-form" data-ng-view>
+  </div>
+
+</div>
+
+</span>

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html ng-app="ContactList">
+<head>
+  <title>ContactList</title>
+  <%= stylesheet_link_tag    "application", media: "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<div id="container" class="container pony-container">
+
+    <%= yield %>
+
+</div>
+</body>
+</html>
